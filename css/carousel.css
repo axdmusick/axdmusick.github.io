@@ -1,0 +1,147 @@
+#carousel {
+    position: relative;
+    height: 400px;
+    top: 50%;
+    overflow: hidden;
+}
+
+#carousel div {
+    position: absolute;
+    transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+    opacity: 1;
+}
+
+#carousel div img {
+    width: 625px;
+    transition: width 1s;
+}
+
+#carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+    width: 200px;
+}
+
+#carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+    width: 200px;
+}
+
+#carousel div.prev {
+    z-index: 5;
+    left: 30%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+    width: 300px;
+}
+
+#carousel div.prevLeftSecond {
+    z-index: 4;
+    left: 15%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+    width: 200px;
+}
+
+#carousel div.selected {
+    z-index: 8;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+    z-index: 5;
+    left: 70%;
+    transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+    width: 300px;
+}
+
+#carousel div.nextRightSecond {
+    z-index: 4;
+    left: 85%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+    width: 200px;
+}
+
+
+.song {
+    width: 625px;
+    height: 352px;
+    background-color: #9381b1;
+}
+
+.song .disco {
+    box-shadow: 0px 0px 100px 15px rgb(254 253 255);
+    -webkit-box-shadow: 0px 0px 100px 15px rgb(254 253 255);
+    border-radius: 0% 55% 55% 0%;
+    margin-top: 15%;
+    margin-left: 20px;
+}
+
+.song div.portada {
+    background: url(../images/discografia/03_noche_revolu_portada.jpeg) center center no-repeat;
+    background-size: cover;
+    width: 230px;
+    height: 230px;
+    margin: 0;
+    position: relative;
+    border-radius: 3px;
+    z-index: 3;
+    -webkit-box-shadow: 6px 10px 32px -4px rgba(0, 0, 0, .27);
+    box-shadow: 6px 10px 32px -4px rgba(0, 0, 0, .27);
+}
+
+.song div.lp {
+    margin-top: -225px;
+    margin-left: 105px;
+    width: 225px;
+    height: 225px;
+    background: red;
+    position: absolute;
+    background: url(../images/discografia/03_noche_revolu_lp.png) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    z-index: 2;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+    -webkit-animation: rotation 5s infinite;
+    -moz-animation: rotation 5s infinite;
+    -o-animation: rotation 5s infinite;
+    -ms-animation: rotation 5s infinite;
+    animation: rotation 5s infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1800deg);
+    }
+}
