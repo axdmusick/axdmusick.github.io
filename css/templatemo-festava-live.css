@@ -16,11 +16,11 @@ https://templatemo.com/tm-583-festava-live
   --secondary-color: #8B05F7;
   --section-bg-color: #f0f8ff;
   --custom-btn-bg-color: #8B05F7;
-  --custom-btn-bg-hover-color: #c01f27;
+  --custom-btn-bg-hover-color: #1FEDE3;
   --dark-color: #000000;
   --p-color: #717275;
   --border-color: #7fffd4;
-  --link-hover-color: #B22727;
+  --link-hover-color: #8B05F7;
 
   --body-font-family: 'Outfit', sans-serif;
 
@@ -327,6 +327,17 @@ strong {
   color: var(--white-color);
 }
 
+/*---------------------------------------
+  ARTISTS              
+-----------------------------------------*/
+
+.artists-section button.carousel-control-prev {
+  left: -10%;
+}
+
+.artists-section button.carousel-control-next {
+  right: -10%;
+}
 
 /*---------------------------------------
   VIDEO              
@@ -546,43 +557,6 @@ strong {
   padding: 35px;
 }
 
-
-/*---------------------------------------
-  TICKET               
------------------------------------------*/
-.ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  padding-top: 130px;
-}
-
-.ticket-form {
-  background: var(--white-color);
-  border-radius: var(--border-radius-medium);
-  padding: 50px;
-}
-
-.ticket-form .form-check {
-  position: relative;
-  min-height: 52px;
-  padding-left: 35px;
-}
-
-.ticket-form .form-check .form-check-label {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 12px;
-  margin-left: 35px;
-  width: 100%;
-  height: 100%;
-}
-
-
 /*---------------------------------------
   ARTISTS              
 -----------------------------------------*/
@@ -640,7 +614,7 @@ strong {
 }
 
 /*---------------------------------------
-  SCHEDULE              
+  VIDEO              
 -----------------------------------------*/
 
 .video-section {
@@ -652,143 +626,15 @@ strong {
 }
 
 /*---------------------------------------
-  GALLERY              
+  PRICING              
 -----------------------------------------*/
-.gallery-section {
+
+.team-section {
   background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
   background-color: #242424;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.table-responsive {
-  filter: drop-shadow(2px 2px 4px #606060);
-}
-
-.schedule-table {
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  overflow: hidden;
-}
-
-.schedule-table .bg-warning {
-  background: #f0a5a5 !important;
-}
-
-.schedule-table thead th {
-  background-color: var(--secondary-color);
-}
-
-.schedule-table th,
-.schedule-table tr,
-.schedule-table td {
-  border-bottom-color: #363a3e;
-  padding: 30px;
-}
-
-.schedule-table tr:last-child th,
-.schedule-table tr:last-child td {
-  border-bottom-color: transparent;
-}
-
-.schedule-table thead th {
-  border-right: 1px solid #c7460a;
-  border-bottom-color: transparent;
-}
-
-.schedule-table th+td {
-  border-bottom: 0;
-}
-
-.schedule-table thead th:last-child {
-  border-right-color: transparent;
-}
-
-.schedule-table .pop-background-image {
-  background-image: url('../images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg');
-}
-
-.schedule-table .rock-background-image {
-  background-image: url('../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg');
-}
-
-.schedule-table .country-background-image {
-  background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
-}
-
-.table-background-image-wrap {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: none;
-  position: relative;
-}
-
-.schedule-table h3,
-.schedule-table p {
-  color: var(--white-color);
-  position: relative;
-  z-index: 2;
-}
-
-
-/*---------------------------------------
-  PRICING              
------------------------------------------*/
-.pricing-thumb {
-  border: 5px dotted var(--dark-color);
-  border-radius: var(--border-radius-medium);
-  position: relative;
-  padding: 50px;
-}
-
-.pricing-thumb h3 small {
-  display: inline-block;
-  font-size: var(--p-font-size);
-  margin-right: 15px;
-}
-
-.pricing-list {
-  column-count: 2;
-  padding-left: 20px;
-}
-
-.pricing-list-item {
-  line-height: normal;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.pricing-tag {
-  background-color: var(--secondary-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-weight: var(--font-weight-bold);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 20px;
-}
-
-.pricing-tag span {
-  font-size: 180%;
-  line-height: normal;
-}
-
-.pricing-thumb .link-fx-1 {
-  color: var(--primary-color);
-}
-
-.pricing-thumb .link-fx-1:hover {
-  color: var(--link-hover-color);
 }
 
 
