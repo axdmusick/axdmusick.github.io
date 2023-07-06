@@ -328,8 +328,11 @@ strong {
 }
 
 /*---------------------------------------
-  ARTISTS              
+  TARYECTORIA              
 -----------------------------------------*/
+.trayectoria-section a.trayectoria-item {
+  width: 60%;
+}
 
 /*---------------------------------------
   VIDEO              
@@ -618,10 +621,10 @@ strong {
 }
 
 /*---------------------------------------
-  PRICING              
+  CONTACT               
 -----------------------------------------*/
 
-.team-section {
+.gallery-section {
   background-image: url('../images/nainoa-shizuru-unsplash-blur.jpg');
   background-color: #242424;
   background-repeat: no-repeat;
@@ -630,9 +633,6 @@ strong {
 }
 
 
-/*---------------------------------------
-  CONTACT               
------------------------------------------*/
 .google-map {
   border-radius: var(--border-radius-medium);
 }
