@@ -637,6 +637,9 @@ strong {
   border-radius: var(--border-radius-medium);
 }
 
+.trayectoria-title {
+  color: var(--custom-btn-bg-color);
+}
 
 /*---------------------------------------
   CUSTOM FORM               
