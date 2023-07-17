@@ -212,6 +212,10 @@ strong {
   transform-origin: 19px 15px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 
 /*---------------------------------------
   SECTION               
