@@ -342,12 +342,34 @@ strong {
   width: 60%;
 }
 
+/* Fondo negro para Discografia y Trayectoria */
+.artists-section,
 .trayectoria-section {
-  background-color: #e6e6e6;
+  background: #000000;
 }
 
-.trayectoria-title {
-  color: var(--custom-btn-bg-color);
+/* Titulos de las secciones legibles sobre el fondo oscuro */
+.artists-section > .container > h2,
+.trayectoria-section h2 {
+  color: var(--white-color);
+}
+
+/* Flechas del carrusel de Discografia visibles sobre el fondo negro.
+   La clase carousel-dark invertia los iconos a negro, los forzamos a blanco */
+.artists-section .carousel-control-prev-icon,
+.artists-section .carousel-control-next-icon {
+  filter: none;
+  opacity: 1;
+}
+
+.artists-section .carousel-control-prev,
+.artists-section .carousel-control-next {
+  opacity: 1;
+}
+
+.artists-section .carousel-control-prev:hover .carousel-control-prev-icon,
+.artists-section .carousel-control-next:hover .carousel-control-next-icon {
+  filter: invert(76%) sepia(45%) saturate(560%) hue-rotate(2deg) brightness(92%);
 }
 
 /*---------------------------------------

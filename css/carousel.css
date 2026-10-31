@@ -1,8 +1,9 @@
+
+
 #carousel {
     position: relative;
     height: 400px;
     top: 50%;
-    overflow: hidden;
 }
 
 #carousel div {
@@ -12,7 +13,7 @@
 }
 
 #carousel div img {
-    width: 625px;
+    width: 400px;
     transition: width 1s;
 }
 
@@ -58,7 +59,7 @@
 }
 
 #carousel div.selected {
-    z-index: 8;
+    z-index: 10;
     left: 50%;
     transform: translateY(0px) translateX(-50%);
 }
@@ -83,7 +84,6 @@
 #carousel div.nextRightSecond img {
     width: 200px;
 }
-
 
 .song {
     width: 625px;

@@ -1,0 +1,188 @@
+/* ===========================================================
+   RIDER TECNICO AXD 2026 - Seccion dentro de Shop (#section_7)
+   =========================================================== */
+
+.axd-rider-section,
+.axd-rider-section * {
+    box-sizing: border-box;
+}
+
+/* El degradado del recuadro grande ahora es el fondo de toda la seccion */
+.pack-section#section_7 {
+    background: radial-gradient(circle at 82% 18%, #5d106c 0, transparent 43%),
+        linear-gradient(115deg, #110917, #240a30 70%, #120918);
+}
+
+.axd-rider-section {
+    --axd-purple: #8c22c9;
+    --axd-gold: #e9c67a;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #fff;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+}
+
+.axd-rider-section .axd-rider-wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.axd-rider-section .axd-rider-title {
+    text-align: center;
+    font-size: clamp(28px, 3.6vw, 42px);
+    margin: 0 0 10px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.axd-rider-section .axd-rider-intro {
+    max-width: 710px;
+    margin: 0 auto 34px;
+    text-align: center;
+    line-height: 1.6;
+    color: #e5d7ea;
+}
+
+.axd-rider-section .axd-rider-card {
+    display: grid;
+    grid-template-columns: minmax(230px, 340px) 1fr;
+    align-items: center;
+    gap: clamp(24px, 5vw, 70px);
+    padding: clamp(20px, 4vw, 42px);
+    background: rgba(255, 255, 255, .07);
+    border: 1px solid rgba(233, 198, 122, .36);
+    border-radius: 23px;
+    box-shadow: 0 18px 52px rgba(0, 0, 0, .28);
+}
+
+.axd-rider-section .axd-rider-cover {
+    display: block;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 34px rgba(0, 0, 0, .35);
+    border: 1px solid rgba(255, 255, 255, .2);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.axd-rider-section .axd-rider-cover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 24px 44px rgba(140, 34, 201, .24);
+}
+
+.axd-rider-section .axd-rider-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.axd-rider-section .axd-rider-kicker {
+    color: var(--axd-gold);
+    font-size: .82rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.axd-rider-section h3 {
+    font-size: clamp(26px, 3vw, 38px);
+    line-height: 1.1;
+    margin: 12px 0 18px;
+    color: #fff;
+}
+
+.axd-rider-section .axd-rider-description {
+    font-size: 1.04rem;
+    line-height: 1.75;
+    color: #e5d7ea;
+    margin: 0 0 22px;
+}
+
+.axd-rider-section .axd-rider-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin: 0 0 26px;
+    padding: 0;
+    list-style: none;
+}
+
+.axd-rider-section .axd-rider-highlights li {
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .17);
+    color: #f6edf9;
+    border-radius: 999px;
+    padding: 9px 13px;
+    font-size: .9rem;
+}
+
+.axd-rider-section .axd-rider-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.axd-rider-section .axd-rider-btn {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 21px;
+    border-radius: 10px;
+    font-size: .97rem;
+    font-weight: 700;
+    transition: transform .2s, filter .2s;
+}
+
+.axd-rider-section .axd-rider-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.12);
+}
+
+.axd-rider-section .axd-rider-btn:focus-visible,
+.axd-rider-section .axd-rider-cover:focus-visible {
+    outline: 3px solid var(--axd-gold);
+    outline-offset: 4px;
+}
+
+.axd-rider-section .axd-rider-btn-primary {
+    background: var(--axd-purple);
+    color: #fff;
+}
+
+.axd-rider-section .axd-rider-btn-secondary {
+    background: transparent;
+    border: 1px solid var(--axd-gold);
+    color: var(--axd-gold);
+}
+
+.axd-rider-section .axd-rider-note {
+    margin: 18px 0 0;
+    color: #cbbacd;
+    font-size: .86rem;
+}
+
+@media (max-width: 720px) {
+    .axd-rider-section .axd-rider-card {
+        grid-template-columns: 1fr;
+    }
+
+    .axd-rider-section .axd-rider-cover {
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
+    .axd-rider-section .axd-rider-actions a {
+        flex: 1 1 180px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .axd-rider-section .axd-rider-cover,
+    .axd-rider-section .axd-rider-btn {
+        transition: none;
+    }
+}

@@ -1,0 +1,9 @@
+# Archivos de video pesados (GitHub limita a 100 MB por archivo)
+video/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Scripts de servidor local (solo para pruebas)
+serve.ps1
