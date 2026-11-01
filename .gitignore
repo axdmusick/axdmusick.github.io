@@ -1,9 +1,12 @@
-# Archivos de video pesados (GitHub limita a 100 MB por archivo)
-video/
+# Videos pesados: GitHub limita a 100 MB por archivo.
+# Por defecto ignoramos videos grandes...
 *.mp4
 *.mov
 *.avi
 *.mkv
+
+# ...pero permitimos este video ya comprimido (71 MB) para el sitio.
+!video/axd_video.mp4
 
 # Scripts de servidor local (solo para pruebas)
 serve.ps1
