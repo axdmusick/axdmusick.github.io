@@ -61,14 +61,16 @@
     margin: 0 10px;
 }
 
-.gallery .pagination-gallery .page {
-    color: gray;
+.gallery .pagination-gallery .page,
+.gallery .pagination-gallery .page-gallery,
+.gallery .pagination-gallery .page-num {
+    color: #ffffff;
 }
 
 .gallery .pagination-gallery .prev-gallery,
 .gallery .pagination-gallery .next-gallery {
-    color: #000;
-    border: 1px solid #000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     font-size: 15px;
     padding: 7px 15px;
     cursor: pointer;
@@ -76,7 +78,7 @@
 
 .gallery .pagination-gallery .prev-gallery.disabled,
 .gallery .pagination-gallery .next-gallery.disabled {
-    border-color: gray;
-    color: gray;
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
     pointer-events: none;
 }
